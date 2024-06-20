@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 70% 30%; 
+    height: 100vh; 
+}
+        
+.head {
+    grid-row: 1; 
+    grid-column: 1 / span 2; 
+
+    padding-left: 10px;
+    height: 100px;
+
+    font-size:88px;
+    font-weight: bold;
+
+    background-color: rgb(115, 70, 200);
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.head img {
+    float:right;
+    width:95px;
+    padding-right: 5px;
+}
+
+.head img:hover {
+    float:right;
+    width:100px;
+    padding-right: 5px;
+}
+
+.left {
+    grid-row: 2; /* 두 번째 행에 배치 */
+    grid-column: 1; /* 첫 번째 열에 배치 */
+    background-color: rgb(130, 90, 204);
+
+    font-size: 20px;
+}
+        
+.left p {
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    width: 70%;
+    background-color: rgb(64, 64, 64);
+    margin-bottom: 0px;
+
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+.right {
+    grid-row: 2; /* 두 번째 행에 배치 */
+    grid-column: 2; /* 두 번째 열에 배치 */
+    background-color: rgb(130, 100, 204);
+
+    font-size: 20px;
+}
+.post {
+    border: 2px solid rgb(32, 2, 47);
+    border-radius: 7px;
+    margin: 10px;
+    margin-bottom: 50px;
+
+    background-color: rgb(130, 100, 204);
+}
+
+.post b {
+    display: block;
+    padding-left: 2%;
+    border: 0px solid black;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: rgb(115, 70, 200);
+    
+}
+
+.post #con {
+    width: 99%;
+    border: 0px solid black;
+    margin: 5px;
+
+    font-size: 15px;
+}
+
+.post #fil {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding-left: 2%;
+
+    font-size: 13px;
+
+    background-color: rgb(130, 70, 200);
+}
+
+#icon {
+    float: right;
+    padding-top:10px;
+    width: 30px;
+
+}
+
+#icon:hover {
+    float: right;
+    padding-top:10px;
+    width: 35px;
+}
+
+#heart {
+    float:left;
+    width: 25px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+iframe {
+    width: 98%;
+    height: 99%;
+}
